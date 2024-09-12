@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skincare Essentials</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, nav {
+            background-color: #ffffff;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #f5f5f5;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            max-height: 400px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        figure img {
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header & Navigation -->
+<nav class="container-fluid">
+    <ul>
+        <li><strong>Shopify Skincare</strong></li>
+    </ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" role="button">Shop Now</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<main class="container">
+    <section class="hero">
+        <img src="https://source.unsplash.com/1024x400/?skincare,model" alt="Skincare Hero Image">
+        <h1>Shop Our Skincare Essentials</h1>
+        <p>Boost your skin’s health with our wide range of natural skincare products.</p>
+        <a href="#" role="button">Shop Now</a>
+    </section>
+
+    <!-- Product Section -->
+    <div class="grid">
+        <section>
+            <hgroup>
+                <h2>Snail Mucin Serum</h2>
+                <h3>Hydrate and Repair</h3>
+            </hgroup>
+            <p>This serum helps to repair and hydrate your skin with natural snail mucin extracts.</p>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?snail,serum" alt="Snail Mucin Serum">
+                <figcaption><a href="https://unsplash.com" target="_blank">Image from Unsplash</a></figcaption>
+            </figure>
+            <h3>Ingredients</h3>
+            <p>Snail Mucin, Hyaluronic Acid, Collagen.</p>
+            <h3>How to Use</h3>
+            <p>Apply evenly on your face after cleansing, both in the morning and night.</p>
+        </section>
+        <section>
+            <hgroup>
+                <h2>Kojic Acid Serum</h2>
+                <h3>Brighten and Lighten</h3>
+            </hgroup>
+            <p>This serum lightens dark spots and evens out skin tone with Kojic Acid.</p>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?kojic,acid" alt="Kojic Acid Serum">
+                <figcaption><a href="https://unsplash.com" target="_blank">Image from Unsplash</a></figcaption>
+            </figure>
+            <h3>Ingredients</h3>
+            <p>Kojic Acid, Vitamin C, Niacinamide.</p>
+            <h3>How to Use</h3>
+            <p>Use daily for brighter and clearer skin. Avoid sun exposure after application.</p>
+        </section>
+        <section>
+            <hgroup>
+                <h2>Muc-Elcin Serum</h2>
+                <h3>Soothe and Rejuvenate</h3>
+            </hgroup>
+            <p>Experience the healing properties of our muc-elcin serum for refreshed, healthy skin.</p>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?serum,skincare" alt="Muc-Elcin Serum">
+                <figcaption><a href="https://unsplash.com" target="_blank">Image from Unsplash</a></figcaption>
+            </figure>
+            <h3>Ingredients</h3>
+            <p>Aloe Vera, Vitamin E, Muc-Elcin.</p>
+            <h3>How to Use</h3>
+            <p>Apply generously on the face before sleep for maximum rejuvenation.</p>
+        </section>
+    </div>
+</main>
+
+<!-- Subscribe Section -->
+<section aria-label="Subscribe example">
+    <div class="container">
+        <article>
+            <hgroup>
+                <h2>Subscribe to Our Newsletter</h2>
+                <h3>Stay updated with new products and offers!</h3>
+            </hgroup>
+            <form class="grid">
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
+                <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+                <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+            </form>
+        </article>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="container">
+    <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+</footer>
+
+</body>
+</html>
